@@ -1,0 +1,28 @@
+/* link styling */
+
+a[href^="https://www.google.com"]{
+    color: green;
+}
+a[href*='link']{
+    color: red;
+}
+
+/* second div paragraph styling */
+#second-div p:nth-child(even){
+    color: red;
+}
+#second-div p:nth-child(odd){
+    color: blue;
+}
+
+/* first div paragraph styling */
+#first-div > p::after{
+    content: 'NEW';
+    color: yellow;
+}
+
+/* paragraph 10 styling */
+body > p:last-of-type:hover{
+    font-style: italic;
+    cursor: pointer;
+}
